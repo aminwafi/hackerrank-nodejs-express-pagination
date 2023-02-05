@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div>
+        <% data.forEach(function(recipe) { %>
+            <p><%= recipe.id %></p>
+            <div>
+                <% recipe.ingredients.forEach(function(ingredient) { %>
+                    <p><%= ingredient %></p>
+                <% }); %>
+            </div>
+        <% }); %> 
+    </div>
+</body>
+</html>
